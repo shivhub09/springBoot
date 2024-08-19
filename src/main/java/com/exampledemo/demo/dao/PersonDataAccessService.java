@@ -11,8 +11,8 @@
 // import com.exampledemo.demo.model.Person;
 
 // // makes it obv that this class is a repo
-// @Repository("fakeDao")
-// public class FakePersonDataAccessService implements PersonDao {
+// @Repository("postgres")
+// public class PersonDataAccessService implements PersonDao {
 
 //     private static List<Person> DB = new ArrayList<>();
 
