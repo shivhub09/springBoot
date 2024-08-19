@@ -7,11 +7,11 @@ import jakarta.persistence.Id;
 
 @Entity
 public class User {
-    
+
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
-    
+
     private String name;
     private String email;
 
@@ -38,5 +38,14 @@ public class User {
 
     public void setEmail(String email) {
         this.email = email;
+    }
+
+    // Custom toString method for better output formatting
+    @Override
+    public String toString() {
+        return String.format(
+            "User { id: %d, name: '%s', email: '%s' }",
+            id, name, email
+        );
     }
 }

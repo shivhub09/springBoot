@@ -1,10 +1,9 @@
-package com.exampledemo.demo.api;
-
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.web.bind.annotation.*;
+package com.exampledemo.demo.controller;
 
 import com.exampledemo.demo.model.User;
 import com.exampledemo.demo.service.UserService;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 
